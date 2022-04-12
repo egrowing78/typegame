@@ -1,0 +1,23 @@
+def get_station():
+    fname="seven.txt"
+    f=open(fname,"r")
+    while True:
+        line=f.readline()
+        if not line : break
+        line=line.strip()
+        s.append(line)
+    f.close()   
+s=[]; q=''; index=0
+get_station()
+for i in range(len(s)):
+    index=i
+    q=s[index] #i번째 역명 가져옴
+    print(q)
+    a=input()
+    
+    if(a==q):
+        print("성공")
+        i+=1
+    else:
+        print("실패")
+        pass
